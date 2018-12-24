@@ -9,7 +9,7 @@ let chirps = [
   { name: "Saoirse", chirp: "What's that!?" }
 ]; //list of chirps
 
-let data = JSON.stringify(chirps); //passes chirps ito JSON
+let data = JSON.stringify(chirps); //passes chirps into JSON object
 fs.writeFileSync("chirps.json", data); //writes file chirps.json with data
 
 let rawData = fs.readFileSync("chirps.json"); //reads chirps.json
